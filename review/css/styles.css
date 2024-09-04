@@ -33,9 +33,20 @@ h3{
 }
 
 /* create styles for the p tag */
+p{
+    color:rgb(54, 5, 50);
+    font-family:'Times New Roman', Times, serif;
+    font-size:medium;
+    text-align:left;
+}
+blockquote{
+    color:rgb(54, 5, 50);
+    font-family:'Times New Roman', Times, serif;
+    font-size: medium;
+}
 
 img{
-    width: 35%;
+    width: 25%;
     display: block;
     margin: 10px auto; 
     /* this set of 3 commands centers. 10px is spacing top and bottom, auto is left and right*/
