@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(238, 243, 241);
+  font-family: "Times New Roman", Times, serif;
+  color: blue;
+}
+
+h1 {
+  text-align: center;
+  font-size: 250%;
+  color: rgb(100, 7, 187);
+}
+
+.container {
+  width: 70%;
+  margin: 10px auto;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ul ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+
+ol ol {
+  list-style-type: lower-roman;
+}
+
+dt {
+  color: green;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+dd {
+  color: brown;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
