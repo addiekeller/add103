@@ -1,0 +1,64 @@
+body {
+  color: rgb(255, 255, 255);
+  background-color: rgb(2, 10, 51);
+  line-height: 2px;
+}
+
+.container {
+  width: 80%;
+  margin: 10px auto;
+}
+
+h1,
+h2 {
+  color: #afe2ff;
+  font-weight: bolder;
+  text-align: center;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 30%;
+}
+
+ul a {
+  text-decoration: none; /* this gets rid of the link's underline*/
+  line-height: 1.5;
+  font-size: large;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  margin-left: 30px;
+  color: rgb(41, 15, 158);
+  text-decoration: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  line-height: 3;
+  background-color: rgb(230, 243, 237);
+  border-radius: 10px;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  background: rgb(41, 15, 158);
+}
+
+li a {
+  color: white;
+}
+
+li a:hover {
+  color: yellow;
+}
+
+li a:active {
+  color: purple;
+}
+
+/*nav a:visited {
+    color:pink;
+}*/
