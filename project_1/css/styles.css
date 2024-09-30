@@ -59,6 +59,27 @@ li a:active {
   color: purple;
 }
 
+div {}
+
+#about-top img {
+  float: left;
+  margin: -15px 15px 15px 15px;
+}
+
+#about-top {
+  margin: 25 px auto;
+  border: 3px pink solid;
+  overflow: auto;
+  min-height: 200px;
+  width: 80%;
+  align-content: center;
+}
+
+#links {
+  margin: 25 px auto;
+  border: 3px pink solid;
+  width: 80%;
+}
 /*nav a:visited {
     color:pink;
 }*/
