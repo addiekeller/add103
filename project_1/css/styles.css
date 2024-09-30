@@ -1,7 +1,8 @@
 body {
   color: rgb(255, 255, 255);
   background-color: rgb(2, 10, 51);
-  line-height: 2px;
+  line-height: 1.5;
+  padding: 10px;
 }
 
 .container {
@@ -59,7 +60,8 @@ li a:active {
   color: purple;
 }
 
-div {}
+div {
+}
 
 #about-top img {
   float: left;
@@ -80,6 +82,13 @@ div {}
   border: 3px pink solid;
   width: 80%;
 }
+
+#profile {
+  float: left;
+}
 /*nav a:visited {
     color:pink;
 }*/
+img {
+  padding: 10px;
+}
