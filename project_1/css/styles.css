@@ -115,16 +115,21 @@ img {
   margin: 10px 1.5%;
 }
 
-/*#dancer {
+#sewing-text p {
   float: left;
 }
-#chorus {
-  float: right;
-}
-#guitar-uke img {
-  display: inline-block;
+
+#sewing-images {
 }
 
-#guitar-uke {
-  align: center;
-}*/
+.column {
+  float: left;
+  width: 50%;
+}
+
+#sewing-images img {
+  display: block;
+  width: 90%;
+  float: right;
+  margin-top: 15px;
+}
