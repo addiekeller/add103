@@ -1,4 +1,38 @@
-body{
-    background: ivory;
-    font-family: Arial, Helvetica, sans-serif;
+body {
+  background: #b9a6c6;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffe500;
+  margin-left: 40px;
+  margin-right: 40px;
+  line-height: 1.5;
+  font-family: math;
+}
+h1 {
+  text-align: center;
+  color: #ffd1cc;
+  font-family: cursive;
+}
+
+img {
+  width: 80%;
+  margin: 10px auto;
+  padding: 30px 0px;
+}
+
+ul {
+  list-style-type: circle;
+  margin-left: 30px;
+}
+
+ol {
+  list-style-type: square;
+  margin-left: 30px;
+}
+
+dt {
+  color: red;
+}
+
+dd {
+  color: #a8f7ff;
 }
