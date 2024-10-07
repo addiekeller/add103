@@ -116,6 +116,13 @@ img {
   margin: 10px 1.5%;
 }
 
+#music-photos img {
+  width: 100%;
+}
+
+#guitar-uke img {
+  width: 100%;
+}
 #sewing-text p {
   float: left;
 }
