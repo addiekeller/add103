@@ -97,6 +97,7 @@ img {
 
 #top-half img {
   float: left;
+  width: 30%;
 }
 
 #collage img {
