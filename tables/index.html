@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Basics</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        background-color: aliceblue;
+        color: black;
+        text-align: center;
+      }
+
+      table {
+        margin: 20px auto;
+        width: 80%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div><h1>Table Basics</h1></div>
+    <div id="links" class="container">
+      <nav id="top">
+        <a href="#">Table Basics</a>
+        <a href="pages/styling-tables.html">Styling Tables</a>
+        <a href="pages/calendar.html">Creating a Calendar</a>
+      </nav>
+      <div>
+        <h2>
+          Societal Acceptability of Different Foods at Different Mealtimes
+        </h2>
+        <table>
+          <tr>
+            <th>Mealtimes</th>
+            <th>Mac & Cheese</th>
+            <th colspan="2">Eggs & Bacon or Cereal</th>
+            <th>French Fries</th>
+          </tr>
+          <tr>
+            <td>Breakfast</td>
+            <td>Not usually accepted</td>
+            <td rowspan="2">Generally <br />Accepted</td>
+
+            <td rowspan="2">Acceptable</td>
+            <td>Not accepted</td>
+          </tr>
+          <tr>
+            <td>Brunch</td>
+            <td>Seems okay</td>
+            <td>Pushing it</td>
+          </tr>
+          <tr>
+            <td>Lunch</td>
+            <td rowspan="3">Generally accepted</td>
+            <td rowspan="3">Not very accepted</td>
+
+            <td rowspan="2">Don't you dare</td>
+            <td rowspan="3">Acceptable</td>
+          </tr>
+          <tr>
+            <td>Linner</td>
+          </tr>
+          <tr>
+            <td>Dinner</td>
+            <td>In a pinch only</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
