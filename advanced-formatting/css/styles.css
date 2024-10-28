@@ -1,9 +1,60 @@
 body {
-  background-color: rgb(255, 232, 232);
-  color: brown;
-  font-size: larger;
+  background: rgb(255, 195, 136);
+    background: linear-gradient(90deg, rgb(255, 218, 181) 0%, rgb(255, 254, 189) 49%, rgb(255, 199, 223) 100%);
+    font-size: larger;
+}
+ nav {
+   text-align: center;
+   font-family: system-ui;
+   color: rgb(117, 42, 8);
+   font-size: 20px;
+ }
+
+ nav div:hover {
+   -webkit-transform: skewX(15deg);
+   -o-transform: skewX(15deg);
+   -ms-transform: skewX(15deg);
+   transform: skewX(15deg);
+ }
+
+ nav a {
+   margin-left: 30px;
+   color: rgb(153, 23, 6);
+   text-decoration: none;
+   font-size: 20px;
+   padding: 10px 15px;
+   line-height: 3;
+   background-color: rgb(255, 203, 228);
+   border-radius: 10px;
+   outline: 2px dotted #630a19;
+   -webkit-box-shadow: -3px 3px 5px 0px rgba(20, 17, 18, 0.6);
+   box-shadow: -3px 3px 5px 0px rgba(20, 17, 18, 0.6);
+   -webkit-transition: color .5s ease-in;
+   -moz-transition: color .5s ease-in;
+   -ms-transition: color .5s ease-in;
+   -o-transition: color .5s ease-in;
+   transition: color .5s ease-in;
+ }
+
+nav a:hover {
+  color: rgb(188, 110, 21);
+  background: rgb(249, 241, 167);
 }
 
+.in-line {
+  display: inline-block;
+  padding: 10px;
+}
+
+#text {
+  -moz-column-count: 3;
+  -moz-column-gap: 20px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 20px;
+  column-count: 3;
+  column-gap: 20px;
+  padding-top: 25px;
+}
 h1 {
   text-align: center;
   color: rgb(117, 42, 8);
@@ -12,14 +63,28 @@ h1 {
 
 #heading {
   background-color: white;
+    color: rgb(117, 42, 8);
   font-size: 20px;
   padding: 10px 15px;
   line-height: 1;
   border-radius: 30px;
   outline: 2px dotted #630a19;
+  -webkit-box-shadow: -3px 3px 5px 0px rgba(20, 17, 18, 0.6);
+    box-shadow: -3px 3px 5px 0px rgba(20, 17, 18, 0.6);
+    -webkit-transition: color .5s ease-in;
+    -moz-transition: color .5s ease-in;
+    -ms-transition: color .5s ease-in;
+    -o-transition: color .5s ease-in;
+    transition: color .5s ease-in;
+  
+  }
+  
+  #heading:hover {
+    color: rgb(15, 86, 43);
 }
 
 .container {
   width: 85%;
   margin: auto;
 }
+
