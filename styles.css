@@ -4,8 +4,8 @@
   --light_primary: #f5af64;
   --dark_text: #472f19;
   --light_secondary: #faeecd;
-  --dark_secondary: = #f5c364;
-  --light_terciary: #faee88;
+  --dark_secondary: rgb(248, 207, 153);
+  --light_text: #faee88;
   --head_font: "Delius", cursive;
   --p_font: "Quicksand", sans-serif;
 }
@@ -129,6 +129,7 @@ section {
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
@@ -150,16 +151,20 @@ table {
 }
 
 body {
-  background: #faeecd;
+  background: var(--light_primary);
+}
+
+#backing {
+  background-color: var(--light_secondary);
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--head_font);
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
-  color: #472f19;
+  color: var(--dark_text);
   padding: 15px;
 }
 
@@ -177,10 +182,10 @@ p {
 }
 /*   remove  background and borders   */
 header {
-  min-height: 180px;
+  min-height: 90px;
   text-align: center;
   font-size: larger;
-  border: 2px solid #f5af64;
+  border: 4px dotted #f5af64;
   background-color: rgb(248, 207, 153);
 }
 
@@ -192,12 +197,21 @@ main h2 {
   font-size: larger;
 }
 .container {
-  width: 85%;
+  width: 80%;
   margin: 10px auto;
   padding: 15px;
   min-height: 1000px;
   max-width: 1200px;
 }
+
+.content {
+  width: 95%;
+  margin: 10px auto;
+  padding: 15px;
+  min-height: 1000px;
+  max-width: 1200px;
+}
+
 nav {
   text-align: center;
   color: white;
@@ -241,15 +255,52 @@ figure {
 }
 main {
   margin: 10px auto;
-  border: 2px solid #f5af64;
-  color: #f57e40;
+  margin-top: 20px;
+  color: var(--dark_text);
+  overflow: auto;
+  background-color: var(--dark_secondary);
+  border: 4px dotted #f5af64;
 }
 footer {
   clear: both;
-  color: #f57e40;
-  font-size: smaller;
-  border: 2px solid #f5af64;
 }
+footer p {
+  color: var(--light_primary);
+  font-size: smaller;
+  text-align: center;
+}
+
 img {
   width: 100%;
+}
+
+dl {
+  font-family: var(--p_font);
+  line-height: 1.75;
+  padding: 30px;
+}
+
+dt {
+  font-family: var(--head_font);
+  font-size: larger;
+  margin-left: 30px;
+}
+
+dd {
+  font-family: var(--p_font);
+  margin-left: 70px;
+  color: var(--p_font);
+}
+
+dt a {
+  text-decoration: none;
+  color: var(--dark_text);
+  padding: 0px 5px;
+}
+
+a:hover {
+  color: var(--dark_primary);
+  background-color: var(--light_secondary);
+  border-radius: 5px;
+  padding: 0px 5px;
 }
