@@ -29,11 +29,7 @@ body {
    outline: 2px dotted #630a19;
    -webkit-box-shadow: -3px 3px 5px 0px rgba(20, 17, 18, 0.6);
    box-shadow: -3px 3px 5px 0px rgba(20, 17, 18, 0.6);
-   -webkit-transition: color .5s ease-in;
-   -moz-transition: color .5s ease-in;
-   -ms-transition: color .5s ease-in;
-   -o-transition: color .5s ease-in;
-   transition: color .5s ease-in;
+
  }
 
 nav a:hover {
@@ -54,16 +50,22 @@ nav a:hover {
   column-count: 3;
   column-gap: 20px;
   padding-top: 25px;
+  color: rgb(117, 42, 8);
 }
 h1 {
   text-align: center;
   color: rgb(117, 42, 8);
   text-shadow: -2px 2px 3px #533a30;
+  -webkit-transition: color 0.5s ease-in;
+    -moz-transition: color 0.5s ease-in;
+    -ms-transition: color 0.5s ease-in;
+    -o-transition: color 0.5s ease-in;
+    transition: color 0.5s ease-in;
 }
 
 #heading {
   background-color: white;
-    color: rgb(117, 42, 8);
+  color: rgb(117, 42, 8);
   font-size: 20px;
   padding: 10px 15px;
   line-height: 1;
@@ -71,16 +73,10 @@ h1 {
   outline: 2px dotted #630a19;
   -webkit-box-shadow: -3px 3px 5px 0px rgba(20, 17, 18, 0.6);
     box-shadow: -3px 3px 5px 0px rgba(20, 17, 18, 0.6);
-    -webkit-transition: color .5s ease-in;
-    -moz-transition: color .5s ease-in;
-    -ms-transition: color .5s ease-in;
-    -o-transition: color .5s ease-in;
-    transition: color .5s ease-in;
+}
   
-  }
-  
-  #heading:hover {
-    color: rgb(15, 86, 43);
+h1:hover {
+  color: rgb(211, 74, 40);
 }
 
 .container {
