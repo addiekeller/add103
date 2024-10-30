@@ -4,8 +4,8 @@
   --light_primary: #f5af64;
   --dark_text: #472f19;
   --light_secondary: #faeecd;
-  --dark_secondary: = #f5c364;
-  --light_terciary: #faee88;
+  --dark_secondary: rgb(248, 207, 153);
+  --light_text: #faee88;
   --head_font: "Delius", cursive;
   --p_font: "Quicksand", sans-serif;
 }
