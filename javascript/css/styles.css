@@ -177,7 +177,7 @@ p {
 }
 /*   remove  background and borders   */
 header {
-  min-height: 180px;
+  min-height: 80px;
   text-align: center;
   font-size: larger;
   border: 2px solid #f5af64;
@@ -187,6 +187,7 @@ header {
 header h1 {
   font-size: xx-large;
   margin-top: 10px;
+  font-weight: bolder;
 }
 main h2 {
   font-size: larger;
@@ -243,6 +244,7 @@ main {
   margin: 10px auto;
   border: 2px solid #f5af64;
   color: #f57e40;
+  background-color: rgb(248, 207, 153);
 }
 footer {
   clear: both;
@@ -251,5 +253,31 @@ footer {
   border: 2px solid #f5af64;
 }
 img {
-  width: 100%;
+  width: 80%;
+  border: dotted 3px var(--dark_primary);
+  display: block;
+  margin: 10px auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 10px;
+  background-color: var(--dark_text);
+  padding: 10px;
+}
+/* auto for the amount of images you are using */
+
+.grid-container > div {
+  background-color: rgb(248, 207, 153);
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.grid-container > div > img {
+}
+
+#main-image img {
+  width: 40%;
 }

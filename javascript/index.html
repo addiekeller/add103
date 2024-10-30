@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Delius&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="favicon" href="../favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Javascript Image Control</h1>
+      </header>
+      <main>
+        <div class="grid-container">
+          <div>
+            <img
+              src="images/cool-dog.png"
+              alt="dog wearing sunglasses"
+              id="img1"
+              onclick='change("images/cool-dog.png")'
+            />
+          </div>
+          <div>
+            <img
+              src="images/iguana.png"
+              alt="white linework drawn iguana"
+              id="img2"
+              onclick='change("images/iguana.png")'
+            />
+          </div>
+          <div>
+            <img
+              src="images/pig.png"
+              alt="cartoon pig"
+              id="img3"
+              onclick='change("images/pig.png")'
+            />
+          </div>
+          <div>
+            <img
+              src="images/sad-puppy.png"
+              alt="sad puppy with leaves"
+              id="img4"
+              onclick='change("images/sad-puppy.png")'
+            />
+          </div>
+          <div>
+            <img
+              src="images/turtle.png"
+              alt="colorful seaturtle"
+              id="img5"
+              onclick='change("images/turtle.png")'
+            />
+          </div>
+        </div>
+        <div id="main-image">
+          <img src="images/cool-dog.png" alt="Animals!" id="large" />
+        </div>
+      </main>
+      <footer><p>&copy; 2024 Addie Keller</p></footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
