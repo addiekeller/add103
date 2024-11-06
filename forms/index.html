@@ -5,6 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Forms</h1>
+      </header>
+      <main>
+        <h2>Class Party</h2>
+        <form action="/action_page.php">
+          <h3>Student Attending</h3>
+          <label for="fname">First name:</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            value="John"
+            required
+          /><br />
+          <label for="lname">Last name:</label><br />
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            value="Doe"
+            required
+          /><br /><br />
+          <h3>Which food should the teacher bring? Select one from below.</h3>
+
+          <input type="radio" id="pizza" name="food" value="pizza" required />
+          <label for="pizza">Pizza</label><br />
+
+          <input
+            type="radio"
+            id="icecream"
+            name="food"
+            value="icecream"
+            required
+          />
+          <label for="icecream">Ice Cream</label><br />
+
+          <input
+            type="radio"
+            id="cupcakes"
+            name="food"
+            value="cupcakes"
+            required
+          />
+          <label for="cupcakes">Cupcakes</label><br />
+
+          <input type="radio" id="chips" name="food" value="chips" required />
+          <label for="chips">Chips</label><br />
+          <br />
+          <h3>What can YOU bring? Please only select up to 3.</h3>
+          <input type="checkbox" id="snacks" name="supplies" value="snacks" />
+          <label for="pizza">Snacks</label><br />
+
+          <input type="checkbox" id="napkins" name="supplies" value="napkins" />
+          <label for="icecream">Napkins</label><br />
+
+          <input
+            type="checkbox"
+            id="paperplates"
+            name="supplies"
+            value="paperplates"
+          />
+          <label for="cupcakes">Paper Plates</label><br />
+
+          <input
+            type="checkbox"
+            id="papercups"
+            name="supplies"
+            value="papercups"
+          />
+          <label for="chips">Paper Cups</label><br />
+
+          <input
+            type="checkbox"
+            id="papertowels"
+            name="supplies"
+            value="papertowels"
+          />
+          <label for="chips">Paper Towels</label><br /><br />
+
+          <h3>Click below only if you need bussing after the party.</h3>
+          <input
+            type="button"
+            onclick="alert('All Set!')"
+            value="Click for Bussing"
+          />
+          <br /><br />
+          <h3>Enter your Birthday so we can plan your class party!</h3>
+
+          <label for="birthday">Enter Birth Date:</label>
+          <input type="date" id="birthday" name="birthday" /><br />
+          <br />
+          <h3>Any other comments?</h3>
+          <label for="fname">Optional*</label><br />
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            placeholder="Type comments"
+          /><br /><br />
+          <br /><input type="submit" value="Submit" />
+        </form>
+      </main>
+      <footer>
+        <p>&copy; 2024 Addie Keller</p>
+      </footer>
+    </div>
+  </body>
 </html>

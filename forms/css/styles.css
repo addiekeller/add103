@@ -177,7 +177,7 @@ p {
 }
 /*   remove  background and borders   */
 header {
-  min-height: 180px;
+  min-height: 80px;
   text-align: center;
   font-size: larger;
   border: 2px solid #f5af64;
@@ -197,29 +197,6 @@ main h2 {
   padding: 15px;
   min-height: 1000px;
   max-width: 1200px;
-}
-nav {
-  text-align: center;
-  color: white;
-  text-align: center;
-  margin-top: 30px;
-}
-
-nav a {
-  text-decoration: none;
-  margin-left: 20px;
-  padding: 15px;
-  border: 2px solid #c49236;
-  background: #f5c364;
-  color: #472f19;
-  font-weight: bold;
-  font-family: quicksand;
-}
-
-nav a:hover {
-  border: 2px solid #f57e40;
-  background: #fae087;
-  color: #472f19;
 }
 
 aside {
@@ -252,4 +229,37 @@ footer {
 }
 img {
   width: 100%;
+}
+
+form {
+  margin-left: 60px;
+  margin-bottom: 35px;
+  color: #c75619;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #f5af64;
+  border-radius: 4px;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+input[type="date"] {
+  background-color: #eecd74;
+  border: none;
+  color: #472f19;
+  padding: 5px 5px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: var(--p_font);
+}
+
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: rgb(243, 187, 124);
 }
