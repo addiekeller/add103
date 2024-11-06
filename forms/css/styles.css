@@ -1,15 +1,13 @@
 /* Variables */
 :root {
-  --dark_primary: #512da8;
-  --light_primary: #d1c4e9;
-  --primary_text: #212121;
-  --secondary_text: #757575;
-  --primary_color: #673ab7;
-  --text_icons: #ffffff;
-  --accent_color: #009688;
-  --divider_color: #bdbdbd;
+  --dark_primary: #f57e40;
+  --light_primary: #f5af64;
+  --dark_text: #472f19;
+  --light_secondary: #faeecd;
+  --dark_secondary: rgb(248, 207, 153);
+  --light_text: #faee88;
   --head_font: "Delius", cursive;
-  --p_font: "Outfit", sans-serif;
+  --p_font: "Quicksand", sans-serif;
 }
 
 /* Color codes (RGB):
@@ -152,17 +150,16 @@ table {
 }
 
 body {
-  background: var(--light_primary);
+  background: #faeecd;
 }
 
 h1,
 h2,
 h3 {
   font-family: var(--head_font);
-  font-weight: 500;
-  font-size: xx-large;
+  font-weight: 400;
   font-style: normal;
-  color: var(--text_icons);
+  color: #472f19;
   padding: 15px;
 }
 
@@ -175,7 +172,7 @@ p {
   font-weight: 500;
   font-style: normal;
   line-height: 1.5;
-  color: var(--primary_text);
+  color: #472f19;
   padding: 15px;
 }
 /*   remove  background and borders   */
@@ -183,13 +180,13 @@ header {
   min-height: 180px;
   text-align: center;
   font-size: larger;
-  border: 2px solid var(--accent_color);
-  background-color: var(--dark_primary);
+  border: 2px solid #f5af64;
+  background-color: rgb(248, 207, 153);
 }
 
 header h1 {
   font-size: xx-large;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 main h2 {
   font-size: larger;
@@ -211,21 +208,18 @@ nav {
 nav a {
   text-decoration: none;
   margin-left: 20px;
-  padding: 10px;
-  border: 2px solid var(--divider_color);
-  background: var(--accent_color);
+  padding: 15px;
+  border: 2px solid #c49236;
+  background: #f5c364;
   color: #472f19;
   font-weight: bold;
-  font-family: var(--p_font);
-  font-size: medium;
-  color: var(--text_icons);
-  border-radius: 10px;
+  font-family: quicksand;
 }
 
 nav a:hover {
-  border: 2px solid var(--accent_color);
-  background: var(--text_icons);
-  color: var(--primary_color);
+  border: 2px solid #f57e40;
+  background: #fae087;
+  color: #472f19;
 }
 
 aside {
