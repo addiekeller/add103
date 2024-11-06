@@ -184,7 +184,7 @@ header {
   text-align: center;
   font-size: larger;
   border: 2px solid var(--accent_color);
-  background-color: var(--dark_primary);
+  background-color: var(--primary_color);
 }
 
 header h1 {
@@ -193,6 +193,7 @@ header h1 {
 }
 main h2 {
   font-size: larger;
+  text-align: center;
 }
 .container {
   width: 85%;
@@ -214,7 +215,6 @@ nav a {
   padding: 10px;
   border: 2px solid var(--divider_color);
   background: var(--accent_color);
-  color: #472f19;
   font-weight: bold;
   font-family: var(--p_font);
   font-size: medium;
@@ -247,14 +247,15 @@ figure {
 }
 main {
   margin: 10px auto;
-  border: 2px solid #f5af64;
-  color: #f57e40;
+  border: 2px solid var(--accent_color);
+  background-color: var(--primary_color);
 }
-footer {
+footer p {
   clear: both;
-  color: #f57e40;
+  background-color: var(--primary_color);
   font-size: smaller;
-  border: 2px solid #f5af64;
+  color: white;
+  border: 2px solid var(--accent_color);
 }
 img {
   width: 100%;
