@@ -263,3 +263,10 @@ input[type="button"]:hover,
 input[type="submit"]:hover {
   background-color: rgb(243, 187, 124);
 }
+
+/* https://chatgpt.com/share/672bef10-72b8-8002-ae77-db492c548c2e */
+input[type="text"]:focus {
+  border: 0px solid #f5af64; /* Retain original border width */
+  outline: none; /* Removes the default focus outline */
+  box-shadow: 0 0 4px 2px #472f19; /* Adds a red focus effect without altering border */
+}
