@@ -175,9 +175,9 @@ p {
   font-weight: 500;
   font-style: normal;
   line-height: 2;
-    color: var(--text_icons);
-    padding: 20px;
-    font-size: larger;
+  color: var(--text_icons);
+  padding: 25px;
+  font-size: larger;
 }
 /*   remove  background and borders   */
 header {
@@ -191,11 +191,22 @@ header {
 header h1 {
   font-size: xx-large;
   margin-top: 15px;
+  background-color: var(--dark_primary);
 }
 main h2 {
   font-size: xx-large;
   text-align: center;
+  margin-top: 20px;
 }
+
+.artstyles h2 {
+  background-color: var(--primary_color);
+}
+
+.photoshop h2 {
+  background-color: var(--accent_color);
+}
+
 .container {
   width: 75%;
   margin: 10px auto;
@@ -239,13 +250,73 @@ aside {
 }
 
 figure {
-  width: 40%;
-  margin: 10px;
-  float: left;
-  background: #f57e40;
+  width: 35%;
+  margin: 30px;
   padding: 15px;
-  border: 2px solid #f5af64;
+  background-color: var(--light_primary);
+  text-align: center;
 }
+
+#figure-left {
+  float: left;
+}
+
+#figure-right {
+  float: right;
+}
+
+.artstyles figure {
+  filter: drop-shadow(-2px 3px 8px #000000);
+}
+/*https://webcode.tools/css-generator/drop-shadow*/
+
+.photoshop,
+.tv #figure-left {
+  margin-right: 35px;
+  filter: drop-shadow(-1px 2px 7px #000000);
+}
+/*https://webcode.tools/css-generator/drop-shadow*/
+
+.photoshop,
+.tv #figure-right {
+  margin-left: 35px;
+  filter: drop-shadow(-1px 2px 7px #000000);
+}
+/*https://webcode.tools/css-generator/drop-shadow*/
+
+figure img {
+  border: dotted 3px var(--dark_primary);
+}
+
+figure.photoshop {
+  width: 17%;
+  margin: 15px;
+}
+
+.photoshop img {
+  width: 95%;
+  margin: 10px 0px;
+}
+
+.tv h3 {
+  font-size: x-large;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: var(--dark_primary);
+}
+
+.tv h2 {
+  background-color: var(--accent_color);
+}
+
+.tv img {
+  display: inline-block;
+  width: 45%;
+  border: dotted 3px var(--dark_primary);
+  margin: 5px;
+}
+
 main {
   margin: 10px auto;
   border: 2px solid var(--accent_color);
@@ -253,10 +324,11 @@ main {
 }
 footer p {
   clear: both;
-  background-color: var(--primary_color);
+  background-color: var(--dark_primary);
   font-size: smaller;
   color: white;
   border: 2px solid var(--accent_color);
+  max-height: 20px;
 }
 img {
   width: 100%;
@@ -272,34 +344,48 @@ img {
 
 /* auto for the amount of images you are using */
 
-.grid-container>div {
+.grid-container > div {
   background-color: var(--accent_color);
   text-align: center;
   padding: 10px 0;
   cursor: pointer;
 }
 
-.grid-container>div>img {
+.grid-container > div:hover {
+  background-color: var(--light_primary);
+}
+
+.grid-container > div > img:hover {
+  border: dotted 3px var(--accent_color);
+}
+
+.grid-container > div > img {
   width: 80%;
-  border: dotted 3px var(--dark_primary);
+  border: dotted 3px var(--text_icons);
   display: block;
   margin: 10px auto;
 }
 
 #main-image img {
-  width: 30%;
-  padding: 20px;
-  float: left;
+  width: 100%;
   max-width: 400px;
-
+  border: dotted 3px var(--dark_primary);
+  background-color: var(--light_primary);
 }
 
 #main-image {
   background-color: var(--accent_color);
+  text-align: center;
 }
 
 #lower-section {
   background-color: var(--accent_color);
   padding: 3px;
   min-height: auto;
+}
+
+figcaption {
+  color: var(--dark_primary);
+  text-align: left;
+  font-size: x-small;
 }
