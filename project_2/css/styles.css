@@ -270,14 +270,14 @@ figure {
 }
 /*https://webcode.tools/css-generator/drop-shadow*/
 
-.photoshop,
+.photoshop #figure-left,
 .tv #figure-left {
   margin-right: 35px;
   filter: drop-shadow(-1px 2px 7px #000000);
 }
 /*https://webcode.tools/css-generator/drop-shadow*/
 
-.photoshop,
+.photoshop #figure-right,
 .tv #figure-right {
   margin-left: 35px;
   filter: drop-shadow(-1px 2px 7px #000000);
