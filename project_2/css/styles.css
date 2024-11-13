@@ -166,6 +166,17 @@ h3 {
   padding: 15px;
 }
 
+.friends h3 {
+  text-align: left;
+  font-size: x-large;
+  margin-bottom: -20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: var(--dark_primary);
+  padding: 4px;
+  border-radius: 5px;
+}
+
 /* <uniquifier>: Use a unique and descriptive class name*/
 /* <weight>: Use a value from 300 to 700*/
 
@@ -181,7 +192,7 @@ p {
 }
 /*   remove  background and borders   */
 header {
-  min-height: 180px;
+  min-height: 170px;
   text-align: center;
   font-size: larger;
   border: 2px solid var(--accent_color);
@@ -199,7 +210,8 @@ main h2 {
   margin-top: 20px;
 }
 
-.artstyles h2 {
+.artstyles h2,
+.friends h2 {
   background-color: var(--primary_color);
 }
 
@@ -265,7 +277,8 @@ figure {
   float: right;
 }
 
-.artstyles figure {
+.artstyles figure,
+.friends figure {
   filter: drop-shadow(-2px 3px 8px #000000);
 }
 /*https://webcode.tools/css-generator/drop-shadow*/
@@ -286,6 +299,15 @@ figure {
 
 figure img {
   border: dotted 3px var(--dark_primary);
+}
+
+/*chatgpt.com/share/67352845-2f5c-8002-a97f-952c8c86f9b9*/
+.friends figure {
+  width: 92%;
+  text-align: center;
+  display: block; /* Ensures it's treated as a block-level element */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 figure.photoshop {
@@ -312,9 +334,9 @@ figure.photoshop {
 
 .tv img {
   display: inline-block;
-  width: 45%;
+  width: 50%;
   border: dotted 3px var(--dark_primary);
-  margin: 5px;
+  margin: -2px;
 }
 
 main {
@@ -322,6 +344,12 @@ main {
   border: 2px solid var(--accent_color);
   background-color: var(--primary_color);
 }
+
+main.friends {
+  background-color: var(--accent_color);
+  border: 2px solid var(--primary_color);
+}
+
 footer p {
   clear: both;
   background-color: var(--dark_primary);
@@ -342,7 +370,25 @@ img {
   padding: 10px;
 }
 
-/* auto for the amount of images you are using */
+.tv-grid {
+  display: grid;
+  grid-template-columns: auto auto; /* auto for the amount of images you are using */
+  padding: 10px;
+  gap: 25px;
+}
+.tv-grid img {
+  width: 100%;
+}
+
+.friends-grid {
+  display: grid;
+  grid-template-columns: auto auto auto; /* auto for the amount of images you are using */
+  padding: 10px;
+  gap: 25px;
+}
+.friends-grid img {
+  width: 100%;
+}
 
 .grid-container > div {
   background-color: var(--accent_color);
@@ -382,10 +428,17 @@ img {
   background-color: var(--accent_color);
   padding: 3px;
   min-height: auto;
+  border: solid 2px var(--primary_color);
 }
 
 figcaption {
   color: var(--dark_primary);
   text-align: left;
   font-size: x-small;
+  margin: 2px 10px;
+}
+
+.friends figcaption {
+  margin: 3px 10px;
+  font-size: small;
 }
