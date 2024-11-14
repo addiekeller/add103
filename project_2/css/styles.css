@@ -289,6 +289,11 @@ figure {
   float: right;
 }
 
+#outer-left,
+#outer-right {
+  filter: none;
+  background-color: rgba(00, 00, 00, 0);
+}
 .instruments figure {
   width: 15%;
 
