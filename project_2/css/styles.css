@@ -173,10 +173,17 @@ h3 {
   margin-left: 25px;
   margin-right: 25px;
   background-color: var(--dark_primary);
-  padding: 4px;
+  padding: 6px;
   border-radius: 5px;
 }
 
+.instruments h3 {
+  text-align: center;
+  background-color: var(--accent_color);
+  margin-top: 10px;
+  font-size: x-large;
+  padding: 10px;
+}
 /* <uniquifier>: Use a unique and descriptive class name*/
 /* <weight>: Use a value from 300 to 700*/
 
@@ -252,6 +259,9 @@ nav a:hover {
   color: var(--primary_color);
 }
 
+.instruments a {
+  color: var(--dark_primary);
+}
 aside {
   width: 20%;
   margin: 10px;
@@ -269,16 +279,29 @@ figure {
   text-align: center;
 }
 
-#figure-left {
+#figure-left,
+#outer-left {
   float: left;
 }
 
-#figure-right {
+#figure-right,
+#outer-right {
   float: right;
 }
 
+.instruments figure {
+  width: 15%;
+
+}
+
+#left-instruments figure,
+#right-instruments figure {
+  display: block;
+
+}
 .artstyles figure,
-.friends figure {
+.friends figure,
+.instruments figure {
   filter: drop-shadow(-2px 3px 8px #000000);
 }
 /*https://webcode.tools/css-generator/drop-shadow*/
@@ -326,6 +349,7 @@ figure.photoshop {
   margin-left: 10px;
   margin-right: 10px;
   background-color: var(--dark_primary);
+  padding: 15px;
 }
 
 .tv h2 {
