@@ -259,10 +259,12 @@ nav a:hover {
   color: var(--primary_color);
 }
 
-.instruments a {
+.instruments a,
+.tv a {
   color: var(--dark_primary);
 }
-.instruments a:hover {
+.instruments a:hover,
+.tv a:hover {
   color: var(--secondary_text);
 }
 aside {
