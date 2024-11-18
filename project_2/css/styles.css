@@ -262,6 +262,9 @@ nav a:hover {
 .instruments a {
   color: var(--dark_primary);
 }
+.instruments a:hover {
+  color: var(--secondary_text);
+}
 aside {
   width: 20%;
   margin: 10px;
@@ -293,10 +296,21 @@ figure {
 #outer-right {
   filter: none;
   background-color: rgba(00, 00, 00, 0);
+  width: 25%;
+    margin: 0px;
+    padding: 0px;
 }
-.instruments figure {
+.topinstruments figure {
   width: 15%;
+}
 
+.bottominstruments {
+  width: 60%;
+  margin-bottom: 13px;
+}
+
+.instruments img {
+  margin-left: -3px;
 }
 
 #left-instruments figure,
@@ -379,14 +393,7 @@ main.friends {
   border: 2px solid var(--primary_color);
 }
 
-footer p {
-  clear: both;
-  background-color: var(--dark_primary);
-  font-size: smaller;
-  color: white;
-  border: 2px solid var(--accent_color);
-  max-height: 20px;
-}
+
 img {
   width: 100%;
 }
@@ -459,7 +466,6 @@ img {
   min-height: auto;
   border: solid 2px var(--primary_color);
 }
-
 figcaption {
   color: var(--dark_primary);
   text-align: left;
@@ -470,4 +476,19 @@ figcaption {
 .friends figcaption {
   margin: 3px 10px;
   font-size: small;
+}
+
+.instruments figcaption {
+  margin: -2px 0px 5px 0px;
+  font-size: small;
+}
+
+footer p {
+  clear: both;
+  background-color: var(--dark_primary);
+  font-size: smaller;
+  color: white;
+  border: 2px solid var(--accent_color);
+  max-height: 23px;
+  margin: 0px;
 }
