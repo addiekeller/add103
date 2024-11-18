@@ -267,7 +267,18 @@ nav a:hover {
 .tv a:hover {
   color: var(--secondary_text);
 }
+/*https: //chatgpt.com/share/673b9a29-5510-8002-bdd7-1eca80e33935*/
 .instruments a:visited,
+.tv a:visited {
+  color: var(--dark_primary);
+}
+
+.instruments a:visited:hover,
+.tv a:visited:hover {
+  color: var(--secondary_text);
+}
+
+/*end chat gpt advice*/
 
 aside {
   width: 20%;
