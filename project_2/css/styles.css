@@ -268,9 +268,7 @@ nav a:hover {
   color: var(--secondary_text);
 }
 .instruments a:visited,
-.tv a:visited {
-  color: var(--dark_primary);
-}
+
 aside {
   width: 20%;
   margin: 10px;
