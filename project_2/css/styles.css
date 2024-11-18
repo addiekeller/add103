@@ -291,32 +291,60 @@ figure {
 #outer-right {
   float: right;
 }
-
+/*https: //chatgpt.com/share/673aac7e-7040-8002-96b2-c42e7ce4dff9* assistance on keeping the figures completely within the "outer" divs*/
 #outer-left,
 #outer-right {
   filter: none;
   background-color: rgba(00, 00, 00, 0);
-  width: 25%;
+  width: 30%;
     margin: 0px;
     padding: 0px;
+  display: flex;
+    /* or use grid if needed */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* space between elements */
+    align-items: center;
 }
-.topinstruments figure {
-  width: 15%;
+.instruments #figure-right,
+.instruments #figure-left {
+  width: 100%;
+  flex: 1 1 auto;
+}
+  
+.instruments #figure-right {
+  margin: 35px 35px 15px 30px;
 }
 
-.bottominstruments {
-  width: 60%;
-  margin-bottom: 13px;
+.instruments #figure-left {
+  margin: 35px 30px 15px 35px;
+}
+
+.instruments #figure-right img,
+.instruments #figure-left img {
+  width: 100%;
+  /* Scales with the figure */
+  height: auto;
+  /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Stay within the figure’s bound*/
+}
+#left-instruments figure,
+#right-instruments figure {
+  display: block;
+}
+
+#outer-left {
+  margin-right: 10px;
+}
+
+#outer-right {
+  margin-left: 10px;
 }
 
 .instruments img {
   margin-left: -3px;
-}
-
-#left-instruments figure,
-#right-instruments figure {
-  display: block;
-
+  width: 100%;
 }
 .artstyles figure,
 .friends figure,
