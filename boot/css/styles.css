@@ -1,0 +1,25 @@
+body {
+  background-color: rgb(255, 222, 238);
+  color: rgb(255, 255, 255);
+}
+
+.container-fluid {
+  background-color: rgb(248, 198, 229);
+  margin-top: 10px;
+}
+
+.container-fluid h1 {
+  text-align: center;
+  color: brown;
+  padding: 10px;
+}
+
+.container,
+.container-lg {
+  background-color: brown;
+  color: rgb(255, 255, 255);
+}
+
+main {
+  padding: 15px;
+}
