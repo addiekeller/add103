@@ -289,7 +289,7 @@ nav,
 .nav-link.active {
   border: 2px solid var(--text_icons);
 }
-/*assisted by chat gpt*/
+/*active hover function assisted by chat gpt*/
 .nav-link.active:hover {
   border: 2px solid var(--accent_color); /* New hover border color */
   background: var(--text_icons); /* New hover background color */
