@@ -1,0 +1,537 @@
+/* Variables */
+:root {
+  --dark_primary: #512da8;
+  --light_primary: #d1c4e9;
+  --primary_text: #212121;
+  --secondary_text: #757575;
+  --primary_color: #673ab7;
+  --text_icons: #ffffff;
+  --accent_color: #009688;
+  --divider_color: #bdbdbd;
+  --head_font: "Delius", cursive;
+  --p_font: "Outfit", sans-serif;
+}
+
+/* Color codes (RGB):
+   Dark Orange = #F57E40
+   Light Orange = #F5AF64
+   Light yellow-green = #FAEE88
+   Light yellow = #FAE087
+   Yellow-orange = #F5C364
+   dark-brown = #472F19
+   pale yellow = #FAEECD
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  background: var(--light_primary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--head_font);
+  font-weight: 500;
+  font-size: xx-large;
+  font-style: normal;
+  color: var(--text_icons);
+  padding: 15px;
+}
+
+.friends h3 {
+  text-align: left;
+  font-size: x-large;
+  margin-bottom: -20px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: var(--dark_primary);
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.instruments h3 {
+  text-align: center;
+  background-color: var(--accent_color);
+  margin-top: 10px;
+  font-size: x-large;
+  padding: 10px;
+}
+/* <uniquifier>: Use a unique and descriptive class name*/
+/* <weight>: Use a value from 300 to 700*/
+
+p {
+  font-family: var(--p_font);
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 2;
+  color: var(--text_icons);
+  padding: 25px;
+  font-size: larger;
+}
+/*   remove  background and borders   */
+header {
+  min-height: 170px;
+  text-align: center;
+  font-size: larger;
+  border: 2px solid var(--accent_color);
+  background-color: var(--primary_color);
+}
+
+header h1 {
+  font-size: xx-large;
+  margin-top: 15px;
+  background-color: var(--dark_primary);
+}
+main h2 {
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.artstyles h2,
+.friends h2 {
+  background-color: var(--primary_color);
+}
+
+.photoshop h2 {
+  background-color: var(--accent_color);
+}
+
+.container {
+  width: 75%;
+  margin: 10px auto;
+  padding: 15px;
+  min-height: 1000px;
+  max-width: 1200px;
+}
+nav {
+  text-align: center;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  margin-left: 20px;
+  padding: 10px;
+  border: 2px solid var(--divider_color);
+  background: var(--accent_color);
+  font-weight: bold;
+  font-family: var(--p_font);
+  font-size: medium;
+  color: var(--text_icons);
+  border-radius: 10px;
+}
+
+nav a:hover {
+  border: 2px solid var(--accent_color);
+  background: var(--text_icons);
+  color: var(--primary_color);
+}
+
+.instruments a,
+.tv a {
+  color: var(--dark_primary);
+}
+.instruments a:hover,
+.tv a:hover {
+  color: var(--secondary_text);
+}
+/*https: //chatgpt.com/share/673b9a29-5510-8002-bdd7-1eca80e33935*/
+.instruments a:visited,
+.tv a:visited {
+  color: var(--dark_primary);
+}
+
+.instruments a:visited:hover,
+.tv a:visited:hover {
+  color: var(--secondary_text);
+}
+
+/*end chat gpt advice*/
+
+aside {
+  width: 20%;
+  margin: 10px;
+  float: right;
+  min-height: 100px;
+  border: 2px solid #f5af64;
+  background-color: rgb(248, 207, 153);
+}
+
+figure {
+  width: 35%;
+  margin: 30px;
+  padding: 15px;
+  background-color: var(--light_primary);
+  text-align: center;
+}
+
+#figure-left,
+#outer-left {
+  float: left;
+}
+
+#figure-right,
+#outer-right {
+  float: right;
+}
+/*https: //chatgpt.com/share/673aac7e-7040-8002-96b2-c42e7ce4dff9* assistance on keeping the figures completely within the "outer" divs*/
+#outer-left,
+#outer-right {
+  filter: none;
+  background-color: rgba(00, 00, 00, 0);
+  width: 30%;
+    margin: 0px;
+    padding: 0px;
+  display: flex;
+    /* or use grid if needed */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* space between elements */
+    align-items: center;
+}
+.instruments #figure-right,
+.instruments #figure-left {
+  width: 100%;
+  flex: 1 1 auto;
+}
+  
+.instruments #figure-right {
+  margin: 35px 35px 15px 30px;
+}
+
+.instruments #figure-left {
+  margin: 35px 30px 15px 35px;
+}
+
+.instruments #figure-right img,
+.instruments #figure-left img {
+  width: 100%;
+  /* Scales with the figure */
+  height: auto;
+  /* Maintain aspect ratio */
+  max-width: 100%;
+  /* Stay within the figure’s bound*/
+}
+#left-instruments figure,
+#right-instruments figure {
+  display: block;
+}
+
+#outer-left {
+  margin-right: 10px;
+}
+
+#outer-right {
+  margin-left: 10px;
+}
+
+.instruments img {
+  margin-left: -3px;
+  width: 100%;
+}
+.artstyles figure,
+.friends figure,
+.instruments figure {
+  filter: drop-shadow(-2px 3px 8px #000000);
+}
+/*https://webcode.tools/css-generator/drop-shadow*/
+
+.photoshop #figure-left,
+.tv #figure-left {
+  margin-right: 35px;
+  filter: drop-shadow(-1px 2px 7px #000000);
+}
+/*https://webcode.tools/css-generator/drop-shadow*/
+
+.photoshop #figure-right,
+.tv #figure-right {
+  margin-left: 35px;
+  filter: drop-shadow(-1px 2px 7px #000000);
+}
+/*https://webcode.tools/css-generator/drop-shadow*/
+
+figure img {
+  border: dotted 3px var(--dark_primary);
+}
+
+/*chatgpt.com/share/67352845-2f5c-8002-a97f-952c8c86f9b9*/
+.friends figure {
+  width: 92%;
+  text-align: center;
+  display: block; /* Ensures it's treated as a block-level element */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure.photoshop {
+  width: 17%;
+  margin: 15px;
+}
+
+.photoshop img {
+  width: 95%;
+  margin: 10px 0px;
+}
+
+.tv h3 {
+  font-size: x-large;
+  margin-top: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: var(--dark_primary);
+  padding: 15px;
+}
+
+.tv h2 {
+  background-color: var(--accent_color);
+}
+
+.tv img {
+  display: inline-block;
+  width: 50%;
+  border: dotted 3px var(--dark_primary);
+  margin: -2px;
+}
+
+main {
+  margin: 10px auto;
+  border: 2px solid var(--accent_color);
+  background-color: var(--primary_color);
+}
+
+main.friends {
+  background-color: var(--accent_color);
+  border: 2px solid var(--primary_color);
+}
+
+
+img {
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px;
+  background-color: var(--dark_text);
+  padding: 10px;
+}
+
+.tv-grid {
+  display: grid;
+  grid-template-columns: auto auto; /* auto for the amount of images you are using */
+  padding: 10px;
+  gap: 25px;
+}
+.tv-grid img {
+  width: 100%;
+}
+
+.friends-grid {
+  display: grid;
+  grid-template-columns: auto auto auto; /* auto for the amount of images you are using */
+  padding: 10px;
+  gap: 25px;
+}
+.friends-grid img {
+  width: 100%;
+}
+
+.grid-container > div {
+  background-color: var(--accent_color);
+  text-align: center;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.grid-container > div:hover {
+  background-color: var(--light_primary);
+}
+
+.grid-container > div > img:hover {
+  border: dotted 3px var(--accent_color);
+}
+
+.grid-container > div > img {
+  width: 80%;
+  border: dotted 3px var(--text_icons);
+  display: block;
+  margin: 10px auto;
+}
+
+#main-image img {
+  width: 100%;
+  max-width: 400px;
+  border: dotted 3px var(--dark_primary);
+  background-color: var(--light_primary);
+}
+
+#main-image {
+  background-color: var(--accent_color);
+  text-align: center;
+}
+
+#lower-section {
+  background-color: var(--accent_color);
+  padding: 3px;
+  min-height: auto;
+  border: solid 2px var(--primary_color);
+}
+figcaption {
+  color: var(--dark_primary);
+  text-align: left;
+  font-size: x-small;
+  margin: 2px 10px;
+}
+
+.friends figcaption {
+  margin: 3px 10px;
+  font-size: small;
+}
+
+.instruments figcaption {
+  margin: -2px 0px 5px 0px;
+  font-size: small;
+}
+
+footer p {
+  clear: both;
+  background-color: var(--dark_primary);
+  font-size: smaller;
+  color: white;
+  border: 2px solid var(--accent_color);
+  max-height: 23px;
+  margin: 0px;
+}
