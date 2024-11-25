@@ -233,15 +233,37 @@ main h2 {
   min-height: 1000px;
   max-width: 1200px;
 }
-nav {
+
+li {
+  display: block;
+  text-align: center;
+}
+
+nav,
+.nav {
   text-align: center;
   color: white;
   text-align: center;
   margin-top: 30px;
+  --bs-nav-link-padding-x: 1rem;
+  --bs-nav-link-padding-y: 0.5rem;
+  --bs-nav-link-font-weight: ;
+  --bs-nav-link-color: var(--text_icons);
+  --bs-nav-link-hover-color: var(--primary_color);
+  --bs-nav-link-disabled-color: var(--bs-secondary-color);
 }
 
-nav a {
+.nav-pills {
+  --bs-nav-pills-border-radius: var(--bs-border-radius);
+  --bs-nav-pills-link-active-color: var(--primary_color);
+  --bs-nav-pills-link-active-bg: var(--light_primary);
+  --bs-nav-pills-link-active-hover-bg: var(--text_icons);
+}
+
+.nav-item a,
+.nav-link a {
   text-decoration: none;
+  box-sizing: border-box;
   margin-left: 20px;
   padding: 10px;
   border: 2px solid var(--divider_color);
@@ -252,8 +274,29 @@ nav a {
   color: var(--text_icons);
   border-radius: 10px;
 }
-
-nav a:hover {
+.nav-link.active a {
+  box-sizing: border-box;
+  margin-left: 20px;
+  padding: 10px;
+  border: 2px solid var(--text_icons);
+  background: var(--light_primary);
+  font-weight: bold;
+  font-family: var(--p_font);
+  font-size: medium;
+  color: var(--primary_color);
+  border-radius: 10px;
+}
+.nav-link.active {
+  border: 2px solid var(--text_icons);
+}
+/*assisted by chat gpt*/
+.nav-link.active:hover {
+  border: 2px solid var(--accent_color); /* New hover border color */
+  background: var(--text_icons); /* New hover background color */
+  color: var(--primary_color); /* New hover font color */
+}
+nav a:hover,
+.nav-link .active a:hover {
   border: 2px solid var(--accent_color);
   background: var(--text_icons);
   color: var(--primary_color);
@@ -312,21 +355,21 @@ figure {
   filter: none;
   background-color: rgba(00, 00, 00, 0);
   width: 30%;
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
   display: flex;
-    /* or use grid if needed */
-    flex-wrap: wrap;
-    justify-content: space-between;
-    /* space between elements */
-    align-items: center;
+  /* or use grid if needed */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* space between elements */
+  align-items: center;
 }
 .instruments #figure-right,
 .instruments #figure-left {
   width: 100%;
   flex: 1 1 auto;
 }
-  
+
 .instruments #figure-right {
   margin: 35px 35px 15px 30px;
 }
@@ -435,7 +478,6 @@ main.friends {
   background-color: var(--accent_color);
   border: 2px solid var(--primary_color);
 }
-
 
 img {
   width: 100%;
