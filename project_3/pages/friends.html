@@ -17,6 +17,7 @@
     />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="favicon" href="../../favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -44,7 +45,20 @@
       </header>
       <div class="friends-outer">
         <main class="friends">
-          <h2>Friends I've Met in College</h2>
+          <h2 id="friendpagetop">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="collapse"
+              data-bs-target="#demo"
+            >
+              Friends I've Met in College
+            </button>
+            <div id="demo" class="collapse">
+              A consice list description of each of my best friends that I've
+              made during my time at McHenry County College.
+            </div>
+          </h2>
           <!--Upper row of friends-->
           <figure class="friends">
             <div class="friends-grid">
@@ -68,7 +82,44 @@
 
           <!--Text-->
 
-          <h3>➔ Isa</h3>
+          <h3 id="friendpage">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#myisaModal"
+            >
+              ➔ Isa
+            </button>
+            <!-- The Modal -->
+            <div class="modal" id="myisaModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Isabella Aguilar</h4>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Featured with Addie in the left-most image at the top of the
+                    page.
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer" id="close-button">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </h3>
           <p>
             One of the first friends I made in college was Isa. We met in an
             Acting I class two years ago and got to work together on Heathers:
@@ -78,7 +129,44 @@
             exercises. We had a lot of fun in that first semester, and it’s
             awesome to have stayed friends.
           </p>
-          <h3>➔ Emma</h3>
+          <h3 id="friendpage">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#myemmaModal"
+            >
+              ➔ Emma
+            </button>
+            <!-- The Modal -->
+            <div class="modal" id="myemmaModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Emma Himley</h4>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Featured with Addie in the center image at the top of the
+                    page.
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer" id="close-button">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </h3>
           <p>
             Emma is another friend from that Acting I class. We were assigned a
             scene together, and it turned out to be one of the most challenging
@@ -87,7 +175,44 @@
             Taylor Swift fan, which is fun because she always has new Swiftie
             updates to share.
           </p>
-          <h3>➔ Skye</h3>
+          <h3 id="friendpage">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#myskyeModal"
+            >
+              ➔ Skye
+            </button>
+            <!-- The Modal -->
+            <div class="modal" id="myskyeModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Skye Schoen</h4>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Featured with Addie in the right-most image at the top of
+                    the page.
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer" id="close-button">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </h3>
           <p>
             Skye is an awesome friend I met while working on Juliet and Romeo.
             He did tech work for Heathers, but we didn’t really get to know each
@@ -96,7 +221,44 @@
             with Isa and Emma. He’s a chill and supportive friend, and it’s
             always a blast hanging out with him.
           </p>
-          <h3>➔ Nathan</h3>
+          <h3 id="friendpage">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#mynatModal"
+            >
+              ➔ Nathan
+            </button>
+            <!-- The Modal -->
+            <div class="modal" id="mynatModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Nathan Bodecker</h4>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Featured with Addie in the left-most image at the bottom of
+                    the page.
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer" id="close-button">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </h3>
           <p>
             Nathan is my boyfriend now, but we actually first became close
             friends during Juliet and Romeo, where he played Romeo and I played
@@ -105,7 +267,44 @@
             everything more fun. He’s my boyfriend, but also my best friend,
             which is pretty special.
           </p>
-          <h3>➔ Olivia</h3>
+          <h3 id="friendpage">
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#mylivModal"
+            >
+              ➔ Olivia
+            </button>
+            <!-- The Modal -->
+            <div class="modal" id="mylivModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                    <h4 class="modal-title">Olivia Greenwald</h4>
+                  </div>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    Featured with Addie in the center image at the bottom of the
+                    page.
+                  </div>
+
+                  <!-- Modal footer -->
+                  <div class="modal-footer" id="close-button">
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </h3>
           <p>
             Olivia, or Liv, is the friend I can tell absolutely anything to. We
             have this unique bond where no topic is off-limits, and we don’t
