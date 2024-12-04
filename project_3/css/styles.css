@@ -412,14 +412,14 @@ figure {
 
 .photoshop #figure-left,
 .tv #figure-left {
-  margin-right: 35px;
+  margin-right: 20px;
   filter: drop-shadow(-1px 2px 7px #000000);
 }
 /*https://webcode.tools/css-generator/drop-shadow*/
 
 .photoshop #figure-right,
 .tv #figure-right {
-  margin-left: 35px;
+  margin-left: 20px;
   filter: drop-shadow(-1px 2px 7px #000000);
 }
 /*https://webcode.tools/css-generator/drop-shadow*/
@@ -583,6 +583,9 @@ footer p {
   --bs-btn-bg: var(--light_primary);
   --bs-btn-border-color: var(--light_primary);
 }
+button.btn.btn-primary {
+  width: 100%;
+}
 .btn-primary {
   --bs-btn-color: #fff;
   --bs-btn-bg: var(--light_primary);
@@ -624,6 +627,27 @@ div.popover-body {
   padding: 0px 5px 0px 1px;
   background-color: var(--primary_color);
   border-color: var(--primary_color);
+  text-align: left;
+  }
+  
+  #friendpage button.btn.btn-primary h4 {
+    margin-left: 10px;
+  }
+  
+  #friendpage button.btn.btn-primary:hover {
+    color: var(--light_primary);
+    text-decoration: dotted underline;
+  }
+  
+  #close-button button.btn.btn-primary {
+    text-align: center;
+    width: 15%;
+  }
+  
+  #close-button button.btn.btn-primary:hover {
+    text-decoration: none;
+    color: var(--text_icons);
+    background-color: #018175;
 }
 
 #friendpagetop button.btn.btn-primary {
@@ -632,6 +656,11 @@ div.popover-body {
   padding: 0px 10px;
   background-color: var(--dark_primary);
   border-color: var(--primary_color);
+}
+#friendpagetop button.btn.btn-primary:hover {
+  color: var(--text_icons);
+  background-color: var(--dark_primary);
+  border-color: var(--light_primary);
 }
 
 h2 > #demo {
@@ -665,4 +694,12 @@ div.modal-body {
   border: var(--accent_color);
   font-size: medium;
   padding: 5px 10px;
+}
+
+.col {
+  padding: 10px;
+}
+
+.col p {
+  padding: 0px
 }
