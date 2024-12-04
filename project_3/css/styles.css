@@ -170,8 +170,8 @@ h3 {
   text-align: left;
   font-size: x-large;
   margin-bottom: -20px;
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
   background-color: var(--dark_primary);
   padding: 6px;
   border-radius: 5px;
@@ -492,9 +492,9 @@ img {
 
 .tv-grid {
   display: grid;
-  grid-template-columns: auto auto; /* auto for the amount of images you are using */
-  padding: 10px;
-  gap: 25px;
+  grid-template-columns: auto auto;
+  padding: 3%;
+  gap: 8%;
 }
 .tv-grid img {
   width: 100%;
@@ -621,6 +621,9 @@ div.popover-body {
   font-weight: bold;
 }
 
+#friendpage h3 {
+  width: 100%;
+}
 #friendpage button.btn.btn-primary {
   color: var(--text_icons);
   font-size: larger;
@@ -628,26 +631,29 @@ div.popover-body {
   background-color: var(--primary_color);
   border-color: var(--primary_color);
   text-align: left;
-  }
-  
-  #friendpage button.btn.btn-primary h4 {
-    margin-left: 10px;
-  }
-  
-  #friendpage button.btn.btn-primary:hover {
-    color: var(--light_primary);
-    text-decoration: dotted underline;
-  }
-  
-  #close-button button.btn.btn-primary {
-    text-align: center;
-    width: 15%;
-  }
-  
-  #close-button button.btn.btn-primary:hover {
-    text-decoration: none;
-    color: var(--text_icons);
-    background-color: #018175;
+  width: 100%;
+}
+
+#friendpage button.btn.btn-primary h4 {
+  margin-left: 10px;
+  font-size: x-large;
+  padding: -10px;
+}
+
+#friendpage button.btn.btn-primary:hover {
+  color: var(--light_primary);
+  text-decoration: dotted underline;
+}
+
+#close-button button.btn.btn-primary {
+  text-align: center;
+  width: 15%;
+}
+
+#close-button button.btn.btn-primary:hover {
+  text-decoration: none;
+  color: var(--text_icons);
+  background-color: #018175;
 }
 
 #friendpagetop button.btn.btn-primary {
@@ -701,16 +707,19 @@ div.modal-body {
 }
 
 .col p {
-  padding: 0px
+  padding: 0px;
 }
-.table>:not(caption)>*>* {
-  padding: .5rem .5rem;
-  color: var(--bs-table-color-state, var(--bs-table-color-type, var(--text_icons)));
+.table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  color: var(
+    --bs-table-color-state,
+    var(--bs-table-color-type, var(--text_icons))
+  );
   background-color: #018175;
 
   border-bottom-width: var(--bs-border-width);
-  box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
-
+  box-shadow: inset 0 0 0 9999px
+    var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
 }
 
 th {
@@ -720,9 +729,6 @@ th {
   padding: 10px;
 }
 
-/*
 #tbl {
-  border: dotted 3px;
-  border-color: var(--dark_primary);
-  padding: 0px 0px -20px 0px;
-}*/
+  width: 100%;
+}
