@@ -365,8 +365,9 @@ figure {
 }
 .instruments #figure-right,
 .instruments #figure-left {
-  width: 100%;
+  width: 90%;
   flex: 1 1 auto;
+  justify-content: center;
 }
 
 .instruments #figure-right {
@@ -408,6 +409,10 @@ figure {
 .instruments figure {
   filter: drop-shadow(-2px 3px 8px #000000);
 }
+.artstyles figure {
+  width: 95%;
+  padding: 10px;
+}
 /*https://webcode.tools/css-generator/drop-shadow*/
 
 .photoshop #figure-left,
@@ -437,9 +442,19 @@ figure img {
   margin-right: auto;
 }
 
+.friends p {
+  padding: 0px;
+}
+
 figure.photoshop {
-  width: 17%;
-  margin: 15px;
+  width: 80%;
+
+  padding: 10px;
+}
+
+.col-sm-3 p {
+  padding: 10px;
+  margin-top: 20px;
 }
 
 .photoshop img {
@@ -500,11 +515,17 @@ img {
   width: 100%;
 }
 
+.tv figure {
+  width: 95%;
+  margin: 20px;
+  padding: 10px;
+}
+
 .friends-grid {
   display: grid;
   grid-template-columns: auto auto auto; /* auto for the amount of images you are using */
-  padding: 1%;
-  gap: 2.5%;
+
+  gap: 1%;
 }
 .friends-grid img {
   width: 100%;
