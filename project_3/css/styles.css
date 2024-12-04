@@ -503,8 +503,8 @@ img {
 .friends-grid {
   display: grid;
   grid-template-columns: auto auto auto; /* auto for the amount of images you are using */
-  padding: 10px;
-  gap: 25px;
+  padding: 1%;
+  gap: 2.5%;
 }
 .friends-grid img {
   width: 100%;
